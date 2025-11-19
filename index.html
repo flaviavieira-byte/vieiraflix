@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Os MAIS animados</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0b0b0b;
+  --card: #1c1c1c;
+  --accent: #e50914;
+  --text: #ffffff;
+  --hover: #ff3b3f;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+}
+
+header {
+  background: linear-gradient(90deg, var(--accent), #b30f12);
+  padding: 20px;
+  text-align:center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  position: sticky;
+  top:0;
+  z-index:10;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.container {
+  width: min(1100px, 94%);
+  margin: 30px auto;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  color: var(--accent);
+  margin-bottom:5px;
+}
+
+.hero .subtitle {
+  color: #bdbdbd;
+  font-size: 1rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top:20px;
+}
+
+.video {
+  background: var(--card);
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(255,0,0,0.8);
+}
+
+.video .frame {
+  position: relative;
+  padding-top: 56.25%;
+  background: #000;
+}
+
+.video iframe {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  border:0;
+}
+
+.video p {
+  padding: 12px 8px;
+  text-align:center;
+  font-weight:600;
+  font-size:1rem;
+  color: var(--text);
+  border-top:1px solid rgba(255,255,255,0.1);
+  transition: color 0.3s ease;
+}
+
+.video p:hover {
+  color: var(--hover);
+}
+
+footer {
+  margin-top:auto;
+  background: linear-gradient(90deg,#b30f12,var(--accent));
+  color: #fff;
+  text-align:center;
+  padding: 15px;
+  font-size:1rem;
+  font-weight:500;
+  letter-spacing:0.5px;
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.7);
+}
+
+@media (max-width:420px){
+  header h1{font-size:1.5rem;}
+  .hero h2{font-size:1.4rem;}
+  .video-grid{gap:18px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎬Os MAIS animados</h1>
+</header>
+
+<main class="container">
+  <div class="hero">
+    <h2>DESENHOS</h2>
+    <div class="subtitle">FAVORIT♥S</div>
+  </div>
+
+  <div class="video-grid">
+    <!-- 1) Tom & Jerry -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/t0Q2otsqC4I" title="Tom & Jerry" allowfullscreen></iframe></div><p>Tom & Jerry</p></div>
+
+    <!-- 2) Bob Esponja -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/8B8jplhrlso" title="Bob Esponja" allowfullscreen></iframe></div><p>Bob Esponja</p></div>
+
+    <!-- 3) Ben 10 -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/G41y4cjCwCA" title="Ben 10" allowfullscreen></iframe></div><p>Ben 10</p></div>
+
+    <!-- 4) Scooby-Doo -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/Edr6_-L3bi4" title="Scooby-Doo" allowfullscreen></iframe></div><p>Scooby-Doo</p></div>
+
+    <!-- 5) Pica-Pau -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/pN28gGdmMPQ" title="Pica-Pau" allowfullscreen></iframe></div><p>Pica-Pau</p></div>
+
+    <!-- 6) Moranguinho -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/076h6h_7nw0" title="Moranguinho - Episódio Completo" allowfullscreen></iframe></div><p>Moranguinho</p></div>
+
+    <!-- 7) Pokémon -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/dg1Ox47EiwM" title="Pokémon Evoluções" allowfullscreen></iframe></div><p>Pokémon</p></div>
+
+    <!-- 8) Os Simpsons -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/FUQLLvvEOCw" title="Os Simpsons" allowfullscreen></iframe></div><p>Os Simpsons</p></div>
+
+    <!-- 9) Turma da Mônica -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/GXQKjoryQRI" title="Turma da Mônica" allowfullscreen></iframe></div><p>Turma da Mônica</p></div>
+
+    <!-- 10) Alvin e os Esquilos -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/061UDreRI-g" title="Alvin e os Esquilos" allowfullscreen></iframe></div><p>Alvin e os Esquilos</p></div>
+
+    <!-- 11) Looney Tunes -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/Zuc486qwfMY" title="Looney Tunes" allowfullscreen></iframe></div><p>Looney Tunes</p></div>
+
+    <!-- 12) Homem-Aranha -->
+    <div class="video"><div class="frame"><iframe src="https://www.youtube.com/embed/tT_KAhJ9TIM" title="Homem-Aranha: A Nova Série Animada (2003)" allowfullscreen></iframe></div><p>Homem-Aranha</p></div>
+
+  </div>
+</main>
+
+<footer>
+  por Thafany
+</footer>
